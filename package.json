@@ -1,0 +1,22 @@
+{
+  "name": "ajay-singh-brainflix-api",
+  "version": "1.0.0",
+  "description": "Brainflix Api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "keywords": [
+    "Brainflix",
+    "API"
+  ],
+  "author": "Ajay Singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
