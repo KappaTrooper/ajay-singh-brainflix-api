@@ -1,19 +1,12 @@
 {
   "name": "ajay-singh-brainflix-api",
   "version": "1.0.0",
-  "description": "Brainflix Api",
+  "description": "API for brainflix data",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "yes"
-  },
-  "keywords": [
-    "Brainflix",
-    "API"
-  ],
   "author": "Ajay Singh",
   "license": "ISC",
   "dependencies": {
