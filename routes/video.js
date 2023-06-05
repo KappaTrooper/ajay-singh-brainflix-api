@@ -38,7 +38,6 @@ router.get('/:id', (req, res) => {
     res.status(404).json({ error: 'Video not found' });
   }
 });
-
 router.post('/', (req, res) => {
   const { title, description } = req.body;
 
@@ -48,14 +47,17 @@ router.post('/', (req, res) => {
     id: uuidv4(),
     title: title || 'Hardcoded Title',
     description: description || 'Hardcoded description',
-    "channel": "Glen Harper",
-    "image": "http://localhost:8550/images/image0.jpeg",
-    "views": "1",
-    "likes": "1",
+    "channel": "a newchannel",
+    "image": "http://localhost:8550/images/image9.jpeg",
+    "views": "3,092,284",
+    "likes": "75,985",
     "duration": "4:20",
     "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1632344461000,
-  
+    "timestamp": Date.now(),
+    "comments": [
+       
+    ]
+    
   };
 
   // Add the new video to the videoData array
@@ -64,7 +66,8 @@ router.post('/', (req, res) => {
   // Save the updated videoData to the JSON file in data/video.json
   fs.writeFileSync(videoDataPath, JSON.stringify(videoData));
 
-  res.status(201).json(newVideo);
+  res.status(201).json({ id: newVideo.id }); // Return the new video's id
 });
+
 
 export default router;
