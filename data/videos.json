@@ -299,18 +299,5 @@
         "timestamp": 1632496261000
       }
     ]
-  },
-  {
-    "id": "c1e90db7-2c13-450d-b451-aed0b905bbd7",
-    "title": "This bike video was sick!!",
-    "description": "best bike",
-    "channel": "a newchannel",
-    "image": "http://localhost:8550/images/image9.jpeg",
-    "views": "3,092,284",
-    "likes": "75,985",
-    "duration": "4:20",
-    "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1685929858495,
-    "comments": []
   }
 ]
